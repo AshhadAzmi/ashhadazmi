@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="../../assets/MyImage.jpg" alt="Profile Picture" width="256" height="256" class="rounded-circle">
+                <p>•	Started my career as an entry-level software engineer at WIPRO, having the ability to take a challenging role in an organization to utilize my technical and interpersonal skills for the growth of the organization as well as to enhance my knowledge about emerging trends in the IT sector.</p>
+                <p>•	Good knowledge about tools and technologies and always ready to learn any new technology, new things to update me because it motivates me to face upcoming challenges in my personal and professional career.</p>
+            </div>
+        </div>
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featureProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featureProject.pictures">
+                    <slide><img src={{picture}} alt="Project Image" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
+
+            <p class="mt-2">{{featureProject.summary}}</p>
+            <p>Visit the Portfolio section to learn more!</p>
+        </div>
+    </div>
+</div>

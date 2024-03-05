@@ -1,0 +1,118 @@
+<div class="container text-center">
+    <button (click)="downloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkOpen" style="color: white;">v</div>
+                    </div>
+
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h4>WIPRO Technologies</h4>
+                    <!-- <h4 class="me-2" style="text-align: end;"> Pune, MH, India</h4> -->
+                    <ul>
+                        <li>Developed, update and enhance the source code as per client requirement.</li>
+                        <li>Created new application and enhanced existing code to meet business requirements.</li>
+                        <li>Performed analysis of technologies as per business requirements.</li>
+                        <li>Created complex proof of concept.</li>
+                        <li>Collaborated with functional analysis to ensure quality of applications.</li>
+                        <li>Completed and drafted all necessary technical documentation.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+
+                </button>
+                <div style="text-align: left;">
+                    <h2>Bachelor's of Technology in Computer Science</h2>
+                    <h4>Maulana Azad National Urdu University, Hyderabad, India</h4>
+                    <ul>
+                        <li>Graduated From Maulana Azad National Urdu University in 2021</li>
+                        <li>Graduated with 85%</li>
+                        <li>Participated in extracarricular acitivites such as Hosting and Organizing Events, Sports and
+                            more!</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertificationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certification</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationOpen" style="color: white;">v</div>
+                    </div>
+
+                </button>
+                <div style="text-align: left;">
+                    <h3>Training/Workshops · Java Skills Certification</h3>
+                    <h3>Microsoft Azure Fundamentals (AZ900)</h3>
+                    <h3>AWS Pratictioner</h3>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div>
+
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>Typescript</li>
+                            <li>Java</li>
+                            <li>JavaScript (Basics)</li>
+                            <li>C++</li>
+                            <li>C</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>.NET</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Databases:</h3>
+                        <ul>
+                            <li>Oracle DB</li>
+                            <li>MS SQL</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Others:</h3>
+                        <ul>
+                            <li>Docker (Basics)</li>
+                            <li>Source Control via Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
